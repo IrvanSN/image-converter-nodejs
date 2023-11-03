@@ -7,20 +7,67 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
-    <form style="display: flex; flex-direction: column" action="/" method="post" enctype="multipart/form-data">
-      <label for="file_upload">Upload Image File:</label>
-      <input name="file" type="file">
-      <label for="to_format">
-        <select name="to_format">
-          <option value="jpeg">JPEG</option>
-          <option value="png">PNG</option>
-          <option value="webp">WEBP</option>
-          <option value="gif">GIF</option>
-          <option value="tiff">TIFF</option>
-        </select>
-      </label>
-
+    <form style="display: flex; flex-direction: column" action="/upload" method="post" enctype="multipart/form-data">
+      <div>
+        <label for="file_upload">Upload Image File:</label>
+        <input name="file" type="file">
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <label>
+          Resize:
+          <input id="resize" type="checkbox" name="resize">
+        </label>
+        <div hidden="hidden" id="resize_option">
+          <label for="width">
+            Width:
+            <input type="number" min="0" value="0" name="width">
+          </label>
+          <label for="height">
+            Height:
+            <input type="number" min="0" value="0" name="height">
+          </label>
+          <label for="fit">
+            Fit:
+            <select name="fit_chosen">
+              <option value="cover">Cover</option>
+              <option value="contain">Contain</option>
+              <option value="fill">Fill</option>
+            </select>
+          </label>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column">
+        <label for="compressed">
+          Compressed:
+          <input type="checkbox" id="compressed" name="compressed">
+        </label>
+        <div id="compressed_option" hidden="hidden">
+          <label for="compressed_option">
+            Quality:
+            <input type="number" name="quality" value="10" min="0" max="100">
+          </label>
+        </div>
+      </div>
+      <div>
+        <label for="change_mimetype">
+          Change Mime-type:
+          <input type="checkbox" id="change_mimetype" name="change_mimetype">
+        </label>
+        <div id="change_mimetype_option" hidden="hidden">
+          <label for="to_format">
+            To Format:
+            <select name="to_format">
+              <option value="jpeg">JPEG</option>
+              <option value="png">PNG</option>
+              <option value="webp">WEBP</option>
+              <option value="gif">GIF</option>
+              <option value="tiff">TIFF</option>
+            </select>
+          </label>
+        </div>
+      </div>
       <button type="submit">Upload</button>
     </form>
+    <script src="/javascripts/index.js"></script>
   </body>
 </html>
