@@ -1,0 +1,44 @@
+.entryarea{
+    position:relative;
+    height: 40px;
+    line-height: 50px;
+    padding-top: 10px;
+}
+
+input[type="number"]{
+    position: absolute;
+    width: 100px;
+    outline: none;
+    font-size: 1.3em;
+    padding: 0 30px;
+    line-height: 50px;
+    border-radius: 10px;
+    border: 2px solid #F0FFFF;
+    background: transparent;
+    transition: 0.1s ease;
+    z-index: 1111;
+}
+
+.labelline{
+    position:absolute;
+    font-size: 1.1em;
+    color: #F0FFFF;
+    padding: 0 25px;
+    margin: 0 20px;
+    transition: 0.2s ease;
+    background-color: #F5F5F5;
+}
+
+input[type="number"]:valid{
+    color: black;
+    border: 2px solid black;
+}
+
+input[type="number"]:valid + .labelline{
+    color:black;
+    height: 35px;
+    line-height: 35px;
+    padding: 0 5px;
+    transform: translate(-15px, -16px) scale(0.88);
+    z-index: 1111;
+}

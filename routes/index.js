@@ -48,7 +48,7 @@ router.post('/upload', (req, res) => {
 
     const filenameSplit = file.filename.split('.')
     const originalFileExtension = filenameSplit[filenameSplit.length - 1]
-
+    
     if (err instanceof multer.MulterError) {
       return res.status(500).json({
         error: true,

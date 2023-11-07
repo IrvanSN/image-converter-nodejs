@@ -1,0 +1,51 @@
+.switch-div{
+    width:8%;
+}
+
+.switch{
+    width:100%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    transition: visibility 0s linear 0.33s, opacity 0.33s linear;
+}
+
+.switch label{
+    cursor: pointer;
+    text-indent: -99999px;
+    width:60px;
+    height:27px;
+    background-color: gray;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+.switch input:checked+label{
+    background-color: #00b665;
+}
+
+.switch input:checked+label:after{
+    left:calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+.switch label:after{
+    content: '';
+    position: absolute;
+    top:3px;
+    left:5px;
+    width:20px;
+    height:20px;
+    background-color: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+.msg {
+    display: block;
+    margin-top: 8px;
+    padding: 8px 12px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+

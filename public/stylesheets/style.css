@@ -1,8 +1,103 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #F5F5F5;
+}
+
+@media (min-width: 390px) {
+  body {
+    padding: 0.125% 2% 0.125% 2%;
+  }
+  .options{
+    left:14%;
+    max-width: 72.5%;
+  }
+}
+
+@media (min-width: 640px) {
+  body {
+    padding: 0.2% 3% 0.2% 3%
+  }
+  .options{
+    left:16%;
+    width: 68%;
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 0.375% 5% 0.375% 5%;
+  }
+  .options{
+    left:17%;
+    max-width: 67%;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding: 0.5% 7% 0.5% 7%;
+  }
+  .options{
+    left:17%;
+    max-width: 66%;
+  }
+}
+
+@media (min-width: 1280px) {
+  body {
+    padding: 0.5% 9% 0.5% 9%;
+  }
+  .options{
+    left:17.5%;
+    max-width: 65%;
+  }
+}
+
+@media (min-width: 1536px) {
+  body {
+    padding: 0.5% 11% 0.5% 11%;
+  }
+  .options{
+    left:17.5%;
+    max-width: 65%;
+  }
 }
 
 a {
   color: #00B7FF;
+}
+
+.options{
+  position:relative;
+}
+
+.title{
+  max-width: 75%;
+  margin: auto;
+  text-align: center;
+}
+
+.content{
+  padding-bottom: 30px;
+}
+
+select {
+  padding: 7px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select:focus {
+  outline: none;
+  border-color: black; 
+}
+
+select option {
+  background-color: #fff; 
+  color: #333; 
+}
+
+.separator{
+  padding-top: 25px;
 }
