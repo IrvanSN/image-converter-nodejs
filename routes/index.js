@@ -41,6 +41,13 @@ router.get('/', (req, res) => {
   res.render('index', { title: 'Image Converter NodeJS' });
 });
 
+router.get('/download', (req, res) => {
+  const resultImagePath = req.query.resultImagePath;
+  res.render('download', { title: 'Image Converter NodeJS', resultImagePath });
+});
+
+router.use('/public/uploads', express.static('public/uploads'));
+
 router.post('/upload', (req, res) => {
   return upload(req, res, async (err) => {
     const file = req.file
@@ -83,14 +90,12 @@ router.post('/upload', (req, res) => {
       image
           .toFormat(to_format)
     }
-
     const resultImagePath = `public/uploads/output-${new Date().getTime()}.${change_mimetype !== 'on' ? originalFileExtension : to_format}`
 
     image
         .toFile(resultImagePath)
-        .then(() => res.redirect('/' + resultImagePath.split('public/')[1]))
+        .then(() => res.redirect(`/download?resultImagePath=${resultImagePath}`))
   })
 })
-
 
 module.exports = router;

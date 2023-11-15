@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href='/stylesheets/dropfile.css' />
+    <link rel="stylesheet" href='/stylesheets/toggle.css' />
+    <link rel="stylesheet" href='/stylesheets/button.css' />
+    <link rel="stylesheet" href='/stylesheets/inputnumber.css' />
+    <link rel="stylesheet" href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css' />
+</head>
+<body>
+    <div class="title">
+        <h1 style="margin-bottom: -10px;"><%= title %></h1>
+        <p>Ini Hasil Konversi Gambar Kamu</p>
+    </div>
+    <div class="drag-container">
+        <div id="image-display">
+            <img src="<%= resultImagePath %>" alt="Result Image">
+        </div>
+    </div>
+    <div class="separator">
+        <div class="wrapper">
+            <div class="link_wrapper">
+                <a href="<%= resultImagePath %>" download>
+                    Download Image
+                </a>
+                <div class="separator">
+                <a href="/">
+                    Convert Lagi
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/javascripts/index.js"></script>
+</html>
