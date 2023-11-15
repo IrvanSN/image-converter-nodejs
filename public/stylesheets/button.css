@@ -7,10 +7,12 @@
   display: flex;
   justify-content: center;
   cursor: pointer;
+  border-radius: 16px;
 }
 
 .link_wrapper{
   position: fixed;
+  border-radius: 16px;
 }
 
 a{
@@ -27,6 +29,7 @@ a{
   letter-spacing: 1px;
   border: 3px solid #333;
   transition: all .35s;
+  border-radius: 16px;
 }
 
 a:hover{
@@ -34,4 +37,5 @@ a:hover{
   border: 3px solid #333;
   background: transparent;
   color: #333;
+  border-radius: 16px;
 }

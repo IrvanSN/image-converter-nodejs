@@ -13,7 +13,7 @@ input[type="number"]{
     padding: 0 30px;
     line-height: 50px;
     border-radius: 10px;
-    border: 2px solid #F0FFFF;
+    border: 2px solid black;
     background: transparent;
     transition: 0.1s ease;
     z-index: 1111;
@@ -22,7 +22,7 @@ input[type="number"]{
 .labelline{
     position:absolute;
     font-size: 1.1em;
-    color: #F0FFFF;
+    color: black;
     padding: 0 25px;
     margin: 0 20px;
     transition: 0.2s ease;

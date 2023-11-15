@@ -101,3 +101,7 @@ select option {
 .separator{
   padding-top: 25px;
 }
+
+#form{
+  margin-bottom: 20%;
+}
