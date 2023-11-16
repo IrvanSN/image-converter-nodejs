@@ -11,4 +11,4 @@ Installasi
 
 Run Project
 1. jalankan `npm run dev`
-2. buka broser dan kunjungi alamat yang telah di sediakan pada terminal
+2. buka broser dan kunjungi `http://localhost:3000`
