@@ -1,6 +1,6 @@
 # image-converter-nodejs
 Image Converter (resize, compress, change mimetype) NodeJS menggunakan sharp
-image converter input support: jpeg, png, webp, gif, svg
+image converter input support: jpg, jpeg, png, webp, svg
 
 Presequites
 1. pastikan telah terinstall node js pada komputer
