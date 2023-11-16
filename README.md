@@ -10,5 +10,5 @@ Installasi
 3. jalankan `npm install`
 
 Run Project
-1. jalankan `npm run start`
+1. jalankan `npm run dev`
 2. buka broser dan kunjungi alamat yang telah di sediakan pada terminal
