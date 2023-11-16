@@ -1,5 +1,5 @@
 # image-converter-nodejs
-Image Converter (resize, compress, change mimetype) NodeJS
+Image Converter (resize, compress, change mimetype) NodeJS menggunakan sharp
 
 Presequites
 1. pastikan telah terinstall node js pada komputer
